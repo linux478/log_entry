@@ -1,0 +1,4 @@
+#!/bin/sh
+LOG_FILE=${HOME}/Git/journal/calendar.txt
+echo "$(date +"%Y-%U-%m-%d@%H:%M %a") Sleep In | @sleep" >> ${LOG_FILE}
+tail -n 1 ${LOG_FILE}

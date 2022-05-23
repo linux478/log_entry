@@ -1,0 +1,10 @@
+#!/bin/sh
+CALENDAR_FILE=${HOME}/Git/journal/calendar.txt
+TODO_FILE=${HOME}/Git/journal/todo.txt
+DATETIMEWEEK="%Y-%U-%m-%d@%H:%M %a"
+DATETIME="%Y-%U-%m-%d@%H:%M"
+DATE="%Y-%U-%m-%d"
+echo "$(date +"%Y-%U-%m-%d@%H:%M %a") Sleep Out | @sleep" >> ${CALENDAR_FILE}
+echo "$(date +"%Y-%U-%m-%d@%H:%M %a") Sleep Out | @sleep" >> ${CALENDAR_FILE}
+
+tail -n 1 ${LOG_FILE}
